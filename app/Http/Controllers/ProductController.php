@@ -161,7 +161,6 @@ class ProductController extends Controller
             $query->orderBy("price", "desc");
         }
 
-        // dd($page);
         $products = $query->paginate(20);
         // dd($products);
 
